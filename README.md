@@ -68,16 +68,18 @@ export interface ShellFlasherIndexItem {
 
 			url: string; // zip, 7z direct download link (https), like: 'https://test.com/gcc.zip'
 
-			zipType: string; // '7z' or 'zip'
+			zipType: 'zip' | '7z' | 'none'; // if zipType == 'none', field 'url' will be ignored
 
 			locationType: 'workspace' | 'global';
 
 			/**
-			 * if 'locationType' == 'workspace', this field means tool install path
+			 * if 'locationType' == 'workspace', Install Dir is '${workspaceFolder}/<location>'
 			 * 
-			 * if 'locationType' == 'global', this field means tool exe file dir path
+			 * if 'locationType' == 'global', Install Dir is '${userHome}/.eide/tools/<location>'
 			*/
 			location: string;
+
+			setupCommand?: string; // (optional) This command will be execuate after resource has been unziped
 		}
 	}
 }

@@ -15,7 +15,29 @@
             "commandLine": "python ./tools/stcflash.py -p ${port} \"${programFile}\"",
             "eraseChipCommand": ""
         },
-        "resources": {}
+        "resources": {
+            "win32": {
+                "url": "https://raw.githubusercontent.com/github0null/eide_shell_flasher_index/master/resources/stc.uart.stcflash/dummy",
+                "zipType": "none",
+                "locationType": "workspace",
+                "location": "tools",
+                "setupCommand": "python -m pip install pyserial --user"
+            },
+            "linux": {
+                "url": "https://raw.githubusercontent.com/github0null/eide_shell_flasher_index/master/resources/stc.uart.stcflash/dummy",
+                "zipType": "none",
+                "locationType": "workspace",
+                "location": "tools",
+                "setupCommand": "python -m pip install pyserial --user"
+            },
+            "darwin": {
+                "url": "https://raw.githubusercontent.com/github0null/eide_shell_flasher_index/master/resources/stc.uart.stcflash/dummy",
+                "zipType": "none",
+                "locationType": "workspace",
+                "location": "tools",
+                "setupCommand": "python -m pip install pyserial --user"
+            }
+        }
     },
     {
         "id": "w800.uart.wm_tool",
