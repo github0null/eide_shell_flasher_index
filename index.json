@@ -1,0 +1,21 @@
+[
+    {
+        "id": "w800.uart.wm_tool",
+        "name": "W800 uart flasher",
+        "detail": "for W80x serial chips (isp)",
+        "platform": ["win32"],
+        "flashConfigTemplate": {
+            "bin": "./bin/${ProjectName}.fls",
+		    "commandLine": "bash ./program_flash.sh \"${ProgramFile}\"",
+		    "eraseChipCommand": ""
+        },
+        "resources": {
+            "win32": {
+                "url": "https://raw.githubusercontent.com/github0null/eide_shell_flasher_index/master/resources/w800.uart.wm_tool/w800.zip",
+			    "zipType": "zip",
+			    "locationType": "workspace",
+			    "location": "tools/w800"
+            }
+        }
+    }
+]
