@@ -19,7 +19,7 @@
                 "zipType": "7z",
                 "locationType": "workspace",
                 "location": "tools/wch_openocd",
-                "setupCommand": "start .\\tools\\wch_openocd\\WCHLink\\SETUP.exe"
+                "setupCommand": "start .\\WCHLink\\SETUP.exe"
             }
         }
     },
