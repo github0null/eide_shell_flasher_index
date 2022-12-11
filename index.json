@@ -1,5 +1,29 @@
 [
     {
+        "id": "wch.ch32v.openocd",
+        "name": "Openocd flasher for ch32vxx (WCH Tools)",
+        "detail": "for ch32v (riscv) chips",
+        "provider": "github0null",
+        "platform": [
+            "win32"
+        ],
+        "scriptInstallDir": "tools",
+        "flashConfigTemplate": {
+            "bin": "",
+            "commandLine": "bash ./tools/program_flash.sh \"${programFile}\"",
+            "eraseChipCommand": ""
+        },
+        "resources": {
+            "win32": {
+                "url": "https://raw.githubusercontent.com/github0null/eide_shell_flasher_index/master/resources/wch.ch32v.openocd/wch_openocd.7z",
+                "zipType": "7z",
+                "locationType": "workspace",
+                "location": "tools/wch_openocd",
+                "setupCommand": ".\\tools\\wch_openocd\\WCHLink\\SETUP.exe"
+            }
+        }
+    },
+    {
         "id": "stc.uart.stcflash",
         "name": "STC ISP Flasher (stcflash.py)",
         "detail": "for stc 8051 chips",
