@@ -1,7 +1,7 @@
 [
     {
         "id": "wch.ch32v.openocd",
-        "name": "Openocd flasher for ch32vxx (WCH Tools)",
+        "name": "WCH-Link + openocd flasher for ch32vxx (WCH-Link) (WCH-Openocd)",
         "detail": "for ch32v (riscv) chips",
         "provider": "github0null",
         "platform": [
@@ -25,7 +25,7 @@
     },
     {
         "id": "stc.uart.stcflash",
-        "name": "STC ISP Flasher (stcflash.py)",
+        "name": "STC ISP flasher (stcflash.py)",
         "detail": "for stc 8051 chips",
         "provider": "github0null",
         "platform": [
@@ -43,7 +43,7 @@
     },
     {
         "id": "w800.uart.wm_tool",
-        "name": "W800 ISP Flasher (wm_tool.exe)",
+        "name": "W800 ISP flasher (wm_tool.exe)",
         "detail": "for w80x serial chips",
         "provider": "github0null",
         "platform": [
