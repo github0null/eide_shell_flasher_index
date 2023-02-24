@@ -2,7 +2,11 @@
 
 firmwareFile=$(echo $1 | sed 's/\\/\//g')
 
-./tools/wch_openocd/bin/openocd.exe -f ../bin/wch-riscv.cfg \
+echo "--------------------------------------------------"
+echo "firmware: ${firmwareFile}"
+echo "--------------------------------------------------"
+
+./tools/wch_openocd/bin/openocd.exe -f ./tools/wch_openocd/bin/wch-riscv.cfg \
     -c init -c halt \
     -c "flash erase_sector wch_riscv 0 last" \
     -c "program ${firmwareFile}" \
