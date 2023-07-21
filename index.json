@@ -27,7 +27,7 @@
                 "zipType": "7z",
                 "locationType": "workspace",
                 "location": "tools/wch_openocd",
-                "setupCommand": "sudo ./beforeinstall/start.sh"
+                "setupCommand": "chmod +x ./beforeinstall/start.sh"
             }
         }
     },
