@@ -5,7 +5,8 @@
         "detail": "for ch32v (riscv) chips",
         "provider": "github0null",
         "platform": [
-            "win32"
+            "win32",
+            "linux"
         ],
         "scriptInstallDir": "tools",
         "flashConfigTemplate": {
@@ -20,6 +21,13 @@
                 "locationType": "workspace",
                 "location": "tools/wch_openocd",
                 "setupCommand": "start .\\WCHLink\\SETUP.exe"
+            },
+            "linux": {
+                "url": "https://raw.githubusercontent.com/github0null/eide_shell_flasher_index/master/resources/wch.ch32v.openocd/wch_openocd_linux.7z",
+                "zipType": "7z",
+                "locationType": "workspace",
+                "location": "tools/wch_openocd",
+                "setupCommand": "chmod +x ./beforeinstall/start.sh"
             }
         }
     },
