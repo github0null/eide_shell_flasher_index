@@ -6,4 +6,4 @@ echo "--------------------------------------------------"
 echo "firmware: ${firmwareFile}"
 echo "--------------------------------------------------"
 
-./wlink flash ${firmwareFile}
+./tools/wlink flash ${firmwareFile}
