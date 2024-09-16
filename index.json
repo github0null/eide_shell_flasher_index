@@ -11,7 +11,7 @@
         "scriptInstallDir": "tools",
         "flashConfigTemplate": {
             "bin": "",
-            "commandLine": "tools${SYS_DirSep}wlink flash \"${programFile}\"",
+            "commandLine": "bash ./tools/program_flash.sh \"${programFile}\"",
             "eraseChipCommand": ""
         },
         "resources": {
