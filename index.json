@@ -1,7 +1,39 @@
 [
     {
+        "id": "wch.any.wlink",
+        "name": "wlink flasher (WCH-Link) (wlink.exe)",
+        "detail": "for WCH chips",
+        "provider": "github0null",
+        "platform": [
+            "win32",
+            "linux"
+        ],
+        "scriptInstallDir": "tools",
+        "flashConfigTemplate": {
+            "bin": "",
+            "commandLine": "tools${SYS_DirSep}wlink flash \"${programFile}\"",
+            "eraseChipCommand": ""
+        },
+        "resources": {
+            "win32": {
+                "url": "https://github.com/ch32-rs/wlink/releases/download/nightly/wlink-win-x86.zip",
+                "zipType": "zip",
+                "locationType": "workspace",
+                "location": "tools",
+                "setupCommand": "xcopy .\\wlink-win-x86\\wlink.exe .\\ /H /E /Y"
+            },
+            "linux": {
+                "url": "https://github.com/ch32-rs/wlink/releases/download/nightly/wlink-linux-x64.tar.gz",
+                "zipType": "tar.gz",
+                "locationType": "workspace",
+                "location": "tools",
+                "setupCommand": "cp -f ./wlink-linux-x64/wlink ./ && chmod +x ./wlink"
+            }
+        }
+    },
+    {
         "id": "wch.ch32v.openocd",
-        "name": "WCH-Link + openocd flasher (WCH-Link) (WCH-Openocd)",
+        "name": "WCH-Link + Openocd flasher (WCH-Link) (WCH-Openocd)",
         "detail": "for WCH riscv chips",
         "provider": "github0null",
         "platform": [
