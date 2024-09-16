@@ -16,14 +16,14 @@
         },
         "resources": {
             "win32": {
-                "url": "https://github.com/ch32-rs/wlink/releases/download/nightly/wlink-win-x86.zip",
+                "url": "https://ftp.clcl.site/resources/wlink/wlink-win-x86.zip",
                 "zipType": "zip",
                 "locationType": "workspace",
                 "location": "tools",
                 "setupCommand": "xcopy .\\wlink-win-x86\\wlink.exe .\\ /H /E /Y"
             },
             "linux": {
-                "url": "https://github.com/ch32-rs/wlink/releases/download/nightly/wlink-linux-x64.tar.gz",
+                "url": "https://ftp.clcl.site/resources/wlink/wlink-linux-x64.tar.gz",
                 "zipType": "tar.gz",
                 "locationType": "workspace",
                 "location": "tools",
