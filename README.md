@@ -1,5 +1,7 @@
 ## EIDE Shell Flasher Index
 
+> 注意事项：每次新添加一个烧录器，都需要在 scripts 目录下新建一个目录，用于存放 program_flash.sh 烧录脚本，目录名就是 下面的 `id`
+
 `index.json` type definition:
 
 ```ts
