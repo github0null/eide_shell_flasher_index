@@ -1,8 +1,8 @@
 [
     {
         "id": "wch.ch32v.openocd",
-        "name": "WCH-Link + openocd flasher for ch32vxx (WCH-Link) (WCH-Openocd)",
-        "detail": "for ch32v (riscv) chips",
+        "name": "WCH-Link + openocd flasher (WCH-Link) (WCH-Openocd)",
+        "detail": "for WCH riscv chips",
         "provider": "github0null",
         "platform": [
             "win32",
