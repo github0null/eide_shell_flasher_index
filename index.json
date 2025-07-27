@@ -1,5 +1,31 @@
 [
     {
+        "id": "msp430.usb.flasher",
+        "name": "MSP430Flasher (MSP-FET430UIF)",
+        "detail": "for TI MSP430 chips",
+        "provider": "github0null",
+        "platform": [
+            "win32",
+            "linux",
+            "darwin"
+        ],
+        "scriptInstallDir": "tools",
+        "flashConfigTemplate": {
+            "bin": "${ExecutableName}.hex",
+            "commandLine": "bash ./tools/program_flash.sh \"${programFile}\"",
+            "eraseChipCommand": "bash ./tools/program_flash.sh eraseAll"
+        },
+        "resources": {
+            "win32": {
+                "url": "https://ftp.clcl.site/resources/ti/msp430_flasher.7z",
+                "zipType": "7z",
+                "locationType": "workspace",
+                "location": "tools/msp430_flasher",
+                "setupCommand": "start .\\ti_msp430driver_setup_1.0.1.2.exe"
+            }
+        }
+    },
+    {
         "id": "wch.any.wlink",
         "name": "wlink flasher (WCH-Link) (wlink.exe)",
         "detail": "for WCH chips",
