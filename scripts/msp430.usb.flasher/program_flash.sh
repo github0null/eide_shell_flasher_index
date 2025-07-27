@@ -7,7 +7,7 @@ function erase() {
     echo "--------------------------------------------------"
     echo
 
-    ./tools/msp430_flasher/MSP430Flasher -e ERASE_ALL -g -z '[RESET]'
+    ./tools/msp430_flasher/MSP430Flasher -e ERASE_ALL -g -z '[VCC]'
 
     return $?
 }
@@ -21,7 +21,7 @@ function program() {
     echo "--------------------------------------------------"
     echo
 
-    ./tools/msp430_flasher/MSP430Flasher -w "${firmwareFile}" -v -g -z '[RESET]'
+    ./tools/msp430_flasher/MSP430Flasher -w "${firmwareFile}" -v -g -z '[VCC]'
 
     return $?
 }
